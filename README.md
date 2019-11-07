@@ -3,8 +3,13 @@
 
 ### 部署方法
 
-1.maven编译
-  “maven clean install” 编译出可执行的jar包，本项目是基于spring-boot的很简单
-2.把生产的jar包拷贝到svn的秘钥文件同级目录，执行jar文件 
-  “nohup java -jar reset-svn-pass.jar &”
-3.访问 http:your-ip:10086即可
+#### 1.maven编译
+---
+  maven clean install
+---
+编译出可执行的jar包，本项目是基于spring-boot的很简单
+#### 2.把生产的jar包拷贝到svn的秘钥文件同级目录，执行jar文件 
+---
+ nohup java -jar reset-svn-pass.jar &
+--- 
+#### 3.访问 http:your-ip:10086即可
