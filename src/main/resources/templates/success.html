@@ -1,0 +1,61 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>windows版本SVN密码自助修改服务</title>
+    <meta name="description" content="Login - Register Template">
+    <meta name="author" content="Lorenzo Angelino aka MrLolok">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            background-color: #303641;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container-register">
+        <div id="title">
+            <i class="material-icons lock">lock</i> windows版SVN密码自助修改服务
+        </div>
+
+        
+        <div class="error">
+            <img class="errorImg" src="../static/img/success.png" alt="" srcset="">
+
+
+            <br>
+            <span>
+                恭喜您修改密码成功！您的新密码为： 
+            </span>
+            <br>
+            <br>
+            <!-- #########密码###### -->
+            <span style="color: lightcoral" th:text="${newPass}">
+
+            </span>
+            <br>
+            <br>
+            <a href="/" style="color: white">
+                 点此返回
+            </a>
+        </div>
+
+        <div class="remember-me">
+                <span style="color: rgb(112, 112, 112)">Tips:本操作将全程监控，请正当使用！</span>
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <div class="version">
+                <span>当前版本：V1.0.0</span>
+                <br>
+                <span>©版权信息归国地信息中心所有 2019</span> 
+        </div>
+    </div>
+</body>
+
+</html>

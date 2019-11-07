@@ -1,0 +1,73 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SVN密码自助修改系统</title>
+    <meta name="description" content="Login - Register Template">
+    <meta name="author" content="Lorenzo Angelino aka MrLolok">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            background-color: #303641;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container-register">
+        <div id="title">
+            <i class="material-icons lock">lock</i> SVN密码自助修改系统
+        </div>
+
+        <form id="iform" th:action="@{/resetPass}"  method="post">
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">face</i>
+                </div>
+                <input th:value="${username}" id="username"  name="username"  placeholder="请输入您的SVN用户名" type="text" required class="validate" autocomplete="off">
+            </div>
+            <div class="clearfix"></div>
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">vpn_key</i>
+                </div>
+                <input th:value="${originPass}" id="originPass" name="originPass"   placeholder="请输入原密码" type="password" required class="validate" autocomplete="off">
+            </div>
+            <div class="clearfix"></div>
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">vpn_key</i>
+                </div>
+                <input th:value="${pass}" id="pass" name="pass"   placeholder="请输入新密码" type="password" required class="validate" autocomplete="off">
+            </div>
+            <div class="clearfix"></div>
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">vpn_key</i>
+                </div>
+                <input th:value="${rePass}" id="rePass" name="rePass"  placeholder="请再次输入新密码" type="password" required class="validate" autocomplete="off">
+            </div>
+
+            <input type="submit" value="确定修改"  class="goto"/>
+        </form>
+                    <div class="remember-me">
+                        <span th:text="${svnUrl}" style="font-family: 'Times New Roman';color: rgb(255,124,105)"></span>
+                        <br>
+                        <span style="color: rgb(112, 112, 112)">Tips:本操作将全程监控，请正当使用！</span>
+                    </div>
+
+
+    </div>
+    <div class="footer">
+        <div class="version">
+            <span>当前版本：V1.0.0</span>
+            <br>
+            <span>©版权信息归国地信息中心所有 2019</span>
+        </div>
+    </div>
+</body>
+
+</html>
