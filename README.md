@@ -1,5 +1,5 @@
 ### 一、介绍
-​      	公司前段时间需要工够自助修改svn密码，运维在网上找过很多的svn修改密码工具，有的用php实现的，有的用python实现的。但是都不尽如人意，最后决定自己手动实现,其实原理很简单，就是针对svn的秘钥文件进行增删改查，于是就用java实现了一个web服务。有需要拿去直用～
+​      	前段时间公司需要员工能够自助修改自己的svn密码，运维在网上找过很多的svn修改密码工具，有的用php实现的，有的用python实现的。但是都不尽如人意，最后决定自己手动实现，于是就用java实现了一个web服务。供用户和运护使用、分享给有需要的～
 
 ![首页](https://github.com/swalikh/SVN-password-reset-tools/src/main/resources/static/img/error.png)
 
